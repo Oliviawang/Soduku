@@ -1,0 +1,41 @@
+body{
+  font-size: 14px;
+}
+.board{
+  width: 450px;
+  height: 450px;
+}
+.grid{
+  box-sizing: border-box;
+  width:50px;
+  height: 50px;
+  text-align:center;
+  line-height:50px;
+  position: relative;
+  z-index: 1;
+}
+.non-step{
+  border:1px solid;
+}
+.row{
+
+  width: 150px;
+  height: 150px;
+}
+.board .row{
+  float:left;
+}
+.row .grid{
+  float: left;
+}
+.step{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,78 @@
+html
+    head
+        link(rel='stylesheet', href='../src/css/main.css')
+
+        script(type='text/javascript', src='../bower_components/requirejs/require.js')
+        script.
+            requirejs.config({
+                "baseUrl": "js",
+                "packages": [{
+                    "name": "css",
+                    "location": "../../bower_components/require-css",
+                    "main": "css.min"
+                },
+                    {
+                        "name": "cy-icons",
+                        "location": "../../bower_components/cy-icons/dist/cy-icons"
+                    },
+                    {
+                        "name": "network-view",
+                        "location": "../../dist/network-view"
+                    },
+                    {
+                        "name": "layout-widget",
+                        "location": "../../bower_components/layout-widget/dist/layout-widget"
+                    },
+                    {
+                        "name": "cy-utils",
+                        "location": "../../bower_components/cy-utils/dist/cy-utils"
+                    },
+                    {
+                        "name": "ui-bootstrap",
+                        "location": "../../bower_components/ui-bootstrap/dist/ui-bootstrap"
+                    },
+                    {
+                        "name": "widget-utils",
+                        "location": "../../bower_components/widget-utils/dist/widget-utils"
+                    },
+                    {
+                        "name": "cy-font",
+                        "location": "../../bower_components/cy-font/dist/cy-font"
+                    }],
+                "paths": {
+                    "jade": "../../bower_components/jade/runtime",
+                    "jquery": "../../bower_components/jquery/dist/jquery.min",
+                    "jquery-ui": "../../bower_components/jquery-ui/jquery-ui.min",
+                    "node-uuid": "../../bower_components/node-uuid/uuid",
+                    "threejs": "../../bower_components/threejs/build/three",
+                    "tween": "../../bower_components/tweenjs/build/tween.min",
+                    "underscore": "../../bower_components/underscore/underscore",
+                    "lodash": "../../bower_components/lodash/dist/lodash.min",
+                    "q": "../../bower_components/q/q",
+                    "modernizr": "../../bower_components/modernizr/modernizr",
+                    "jquery.bootstrap": "../../bower_components/bootstrap/dist/js/bootstrap.min"
+                },
+                "shim": {
+                    "threejs": {
+                        "exports": "THREE"
+                    },
+                    "tween": {
+                        "exports": "TWEEN"
+                    },
+                    "modernizr": {
+                        "exports": "Modernizr"
+                    },
+                    "jquery.bootstrap": [
+                        "jquery"
+                    ]
+                },
+                "map": {},
+                "deps": []
+
+            });
+
+            requirejs(['main']);
+            
+    body
+
+

@@ -1,0 +1,34 @@
+{
+  "name": "Sudoku",
+  "version": "0.0.1",
+  "authors": [
+    "Olivia Wang <olivuawang@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "sudoku"
+  ],
+  "license": "OliviaWang",
+  "homepage": "",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    ".jshintrc",
+    ".jshintignore",
+    "Makefile",
+    "Gruntfile.js",
+    "*.md",
+    "package.json",
+    "src",
+    "spec",
+    "build"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.14",
+    "require-css": "~0.1.5",
+    "jquery": "~2.1.1",
+    "jade":"^1.7.0"
+  }
+}
